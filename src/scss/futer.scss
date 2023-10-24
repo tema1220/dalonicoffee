@@ -206,6 +206,10 @@ footer{
                             color: #222;
                             letter-spacing: .02em;
                             text-align: cq  ;
+                            @media (max-width:582px) {
+                                font-size: 10px;
+                                
+                            }
                         }
                         &__desc{
                             color: inherit;
@@ -284,6 +288,10 @@ footer{
         background: #c22026;
         height: 100%;
         .container{
+            @media (max-width:1170px) {
+                width: 100%;
+                
+            }
             width: 1170px;
             .align-items-center{
                 align-items: center!important;
