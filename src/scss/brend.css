@@ -1,0 +1,38 @@
+.brand-area {
+  padding: 70px 0;
+}
+.brand-area .brand-area-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.brand-area .brand-area-container .brand-area-container-row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+  flex: 0 0 auto;
+  width: 100%;
+}
+.brand-area .brand-area-container .brand-area-container-row .brand-area-container-row-section {
+  padding: 25px 0 23px;
+  border: 1px solid #efefef;
+  border-radius: 7px;
+  display: block;
+}
+.brand-area .brand-area-container .brand-area-container-row .brand-area-container-row-section .brand-area-container-row-section-content {
+  display: flex;
+}
+.brand-area .brand-area-container .brand-area-container-row .brand-area-container-row-section .brand-area-container-row-section-content .item {
+  width: 212.8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+.brand-area .brand-area-container .brand-area-container-row .brand-area-container-row-section .brand-area-container-row-section-content .item .item-content {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=brend.css.map */

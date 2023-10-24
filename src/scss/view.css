@@ -1,0 +1,67 @@
+.view {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 65px;
+  position: relative;
+  height: 72px;
+}
+.view .view-page {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.view .view-page .container {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view .view-page .container .center {
+  width: 360px;
+  height: 72px;
+  position: absolute;
+}
+.view .view-page .container .center .btn {
+  width: 360px;
+  height: 72px;
+  cursor: pointer;
+  background: #6e3703;
+  border: 1px solid #343d46;
+  outline: none;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+}
+.view .view-page .container .center .btn svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+  border: none !important;
+}
+.view .view-page .container .btn:hover {
+  transition: 1s ease-in-out;
+  background: #c22026;
+}
+.view .view-page .container .btn:hover svg {
+  stroke-dashoffset: -480;
+}
+.view .view-page .container .btn span {
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  visibility: visible;
+  font-family: Comfortaa, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+}/*# sourceMappingURL=view.css.map */

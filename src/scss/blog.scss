@@ -1,0 +1,217 @@
+
+$red-color: #c22026;
+$gen-backg-Sect: #fff;
+$color-text-black: #222;
+$color-brown : #6e3703;
+$color-lightGray :#f4f4f4;
+
+@mixin hover-box {
+    transition: 1s ease-in-out;
+    background: #c22026;
+}
+@mixin transit-svg {
+    fill:#c22026;
+    transition: all .3s ease 0s;
+}
+
+@mixin transit-text {
+    color: #c22026;
+    transition: all .3s ease 0s;
+}
+
+
+@mixin button-hover-black{
+    background:#222;
+    transition: all .3s ease 0s;
+
+
+
+
+}
+@mixin font-style-400-13 {
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-400-14 {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-400-15 {
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-400-24 {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+
+@mixin font-style-500-24 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-500-25 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-500-32 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+
+
+
+.blog{
+    background: #f4f4f4;
+    padding: 63px 0 70px;
+    margin-bottom: 65px;
+    width: 100%;
+    .blog-container{
+        width: 1170px;
+        margin: 0 auto;
+        @media (max-width:1200px) {
+            width: 100%;
+        }
+        .blog-container-row{
+
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(var(--bs-gutter-y) * -1);
+            margin-right: calc(var(--bs-gutter-x)/ -2);
+            margin-left: calc(var(--bs-gutter-x)/ -2);
+            .blog-container-row-content{
+                flex-shrink: 0;
+                width: 100%;
+                max-width: 100%;
+                padding-right: calc(var(--bs-gutter-x)/ 2);
+                padding-left: calc(var(--bs-gutter-x)/ 2);
+                margin-top: var(--bs-gutter-y);
+                .blog-container-row-content-title{
+                    text-align: center;
+                    margin-bottom: 30px;
+                    .blog-container-row-content-title__text{
+                        
+                        line-height: 35px;
+                        
+                        display: inline-block;
+                        margin-bottom: 0;
+                        text-transform: capitalize;
+                        padding-bottom: 0;
+                        
+                        
+                        color: #222;
+                        letter-spacing: .02em;
+                        @include font-style-500-32 ;
+                    }
+                }
+            }
+        }
+        .blog-container-row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            // margin-top: calc(var(--bs-gutter-y) * -1);
+            // margin-right: calc(var(--bs-gutter-x)/ -2);
+            // margin-left: calc(var(--bs-gutter-x)/ -2);
+            .blog-container-row-section{
+                // width: 306.89px;
+                // margin-right: 30px;
+            
+                .blog-container-row-section-top{
+                    width: 100%;
+                    .blog-container-row-section-top-link{
+                        color: inherit;
+                        line-height: inherit;
+                        text-decoration: none;
+                        cursor: pointer;
+                        .blog-container-row-section-top-link__pictures{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+                .blog-container-row-section-bottom{
+                    padding: 23px 20px 20px;
+                    background: #fff;
+                    .blog-container-row-section-bottom-content{
+                        margin-bottom: 9px;
+                        p{
+                            line-height: 15px;
+
+                            color: #222;
+                            letter-spacing: .02em;
+                            @include font-style-400-14;
+                            a{
+                                color: inherit;
+                                line-height: inherit;
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .blog-container-row-section-bottom-title{
+
+                        text-transform: capitalize;
+                        line-height: 18px;
+                        margin-bottom: 5px;
+
+                        color: #222;
+                        letter-spacing: .02em;
+                        @include font-style-400-15;
+                        .blog-container-row-section-bottom-title__link{
+                            color: inherit;
+                            line-height: inherit;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                        .blog-container-row-section-bottom-title__link-hover:hover{
+                            transition: all .3s ease 0s;
+                            color: #c22026;
+                        }
+                    }
+                    .blog-container-row-section-bottom-footer{
+                        margin-top: 17px;
+                        .blog-container-row-section-bottom-footer__link{
+                            line-height: 24px;
+                            display: inline-block;
+                            text-transform: uppercase;
+                            position: relative;
+                            text-decoration: none;
+                            cursor: pointer;
+                            color: inherit;
+
+                            color: #222;
+                            letter-spacing: .02em;
+                            @include font-style-400-14;
+                        }
+                        .blog-container-row-section-bottom-footer__link-hover:hover{
+                            transition: all .3s ease 0s;
+                            color: #c22026;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

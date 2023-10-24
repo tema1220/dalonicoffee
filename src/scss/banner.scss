@@ -1,0 +1,150 @@
+$red-color: #c22026;
+$gen-backg-Sect: #fff;
+$color-text-black: #222;
+$color-brown : #6e3703;
+
+@mixin hover-box {
+    transition: 1s ease-in-out;
+    background: #c22026;
+}
+@mixin transit-svg {
+    fill:#c22026;
+    transition: all .3s ease 0s;
+}
+
+@mixin transit-text {
+    color: #c22026;
+    transition: all .3s ease 0s;
+}
+
+
+@mixin button-hover-black{
+    background:#222;
+    transition: all .3s ease 0s;
+}
+@mixin font-style-400-13 {
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-400-14 {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-400-15 {
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-400-24 {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+
+@mixin font-style-500-24 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-500-25 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-500-32 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+
+
+
+
+.banner{
+    width: 100%;
+    height: 386px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 70px;
+    position:relative;
+    .banner__img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        // z-index: -1;
+    }
+
+    .banner-section{
+        width: 1170px;
+        z-index: 3;
+        
+        
+        .banner-section-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: self-start;
+            padding-left: 30px;
+            @media (max-width:375px) {
+                padding-left: 0px;
+                
+            }
+            .banner-section-content__title{
+                @include font-style-500-32;
+                color: $gen-backg-Sect;
+                font-size: 48px;
+                line-height: 48px;
+                font-weight: 600;
+                margin-bottom: 8px;
+                @media (max-width:342px) {
+                    @include font-style-500-32;
+                }
+            }
+            .banner-section-content__subtitle{
+                @include font-style-500-32;
+                font-size: 36px;
+                line-height: 36px;
+                margin-bottom: 0;
+                font-weight: 300;
+
+                color: $gen-backg-Sect;
+                margin-bottom: 57px;
+            }
+            .banner-section-content__btn{
+                @include font-style-400-15;
+                
+                padding: 0 25px;
+                display: inline-block;
+                text-transform: uppercase;
+                border-radius: 10px;
+                height: 44px;
+                line-height: 44px;
+                background: inherit;
+                color: $gen-backg-Sect;
+                background: $red-color;
+                justify-content: center;
+            }
+            .banner-section-content__btn-hover:hover{
+                @include button-hover-black;
+            }
+        }
+    }
+}

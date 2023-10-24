@@ -1,0 +1,197 @@
+$red-color: #c22026;
+$gen-backg-Sect: #fff;
+$color-text-black: #222;
+$color-brown : #6e3703;
+
+@mixin hover-box {
+    transition: 1s ease-in-out;
+    background: #c22026;
+}
+@mixin transit-svg {
+    fill:#c22026;
+    transition: all .3s ease 0s;
+}
+
+@mixin transit-text {
+    color: #c22026;
+    transition: all .3s ease 0s;
+}
+
+
+@mixin button-hover-black{
+    background:#222;
+    transition: all .3s ease 0s;
+}
+
+@mixin font-style-400-13 {
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-400-14 {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-400-15 {
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-400-24 {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+
+@mixin font-style-500-24 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-500-25 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+@mixin font-style-500-32 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    visibility: visible;
+    font-family: Comfortaa,sans-serif;
+}
+
+
+.view{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row;
+    margin-bottom: 65px;
+    position: relative;
+    margin: 0 auto;
+
+    height: 72px;
+
+
+
+    .view-page{
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        flex-direction: row;
+
+        @media (max-width:1200px) {
+            width: 100%;
+            
+        }
+        @media (max-width:540px) {
+            flex-direction: column;
+            
+        }
+
+    .container{
+        width: 360px;
+        // height: 400px;
+        // position: absolute;
+        // left: 50%;
+        // top: 50%;
+        // transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .center{
+            width: 360px;
+            // height: 72px;
+            position: absolute;
+            @media (max-width:1140px) {
+                display: flex;
+                justify-content: space-around;
+                
+            }
+            @media (max-width:1094px) {
+                width: 240px;
+            }
+            @media (max-width:735px) {
+                width: 170px;
+                
+            }
+            .btn{
+                width: 360px;
+                height: 72px;
+                cursor: pointer;
+                background: $color-brown;
+                border: 1px solid #343d46;
+                outline: none;
+                transition: 1s ease-in-out;
+                border-radius: 15px;
+                @media (max-width:1140px) {
+                    width: 350px;
+                    
+                }
+                @media (max-width:800px) {
+                    width: 207px;
+                    
+                }
+                @media (max-width:735px) {
+                    width: 170px;
+                    
+                }
+                svg{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    fill: none;
+                    stroke: $gen-backg-Sect;
+                    stroke-dasharray: 150 480;
+                    stroke-dashoffset: 150;
+                    transition: 1s ease-in-out;
+                    border: none!important;
+                    @media (max-width:1096px) {
+                        display: none;
+                        
+                    }
+                }
+            }
+        }
+        .btn:hover {
+            @include hover-box;
+        }
+        
+        .btn:hover svg {
+            stroke-dashoffset: -480;
+        }
+        
+        .btn span {
+            color: $gen-backg-Sect;
+            @include font-style-500-25;
+            font-size: 36px;
+            line-height: 36px;
+            @media (max-width:801px) {
+                font-size: 20px;
+                
+            }
+
+        }
+
+    }
+
+    }   
+    
+}
